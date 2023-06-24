@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library System</title>
+  <link rel="stylesheet" href="../Fronend project/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="navbar-left">
+        <span class="library-text">Library System</span>
+      </div>
+      <div class="navbar-right">
+        <a href="#books">Books</a>
+        <a href="#register">Register</a>
+        <a href="#contact">Contact Us</a>
+        <a href="#logout">Logout</a>
+    </nav>
+  </header>
+  
+  
+
+  <main class="main-content">
+    <section id="books">
+      <h2>Books</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Book ID</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Genre</th>
+            <th>Availability</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>001</td>
+            <td>
+              <a href="#">The Great Gatsby</a>
+              <table class="nested-table">
+                <tr>
+                  <td>Publication Date:</td>
+                  <td>June 10, 1925</td>
+                </tr>
+                <tr>
+                  <td>Page Count:</td>
+                  <td>180</td>
+                </tr>
+                <tr>
+                  <td>ISBN:</td>
+                  <td>9780743273565</td>
+                </tr>
+              </table>
+            </td>
+            <td>F. Scott Fitzgerald</td>
+            <td>Classic</td>
+            <td>Available</td>
+          </tr>
+          <!-- Add more book rows as needed -->
+         
+          <tr>
+            <td>002</td>
+            <td>
+              <a href="#">HARRY POTTER GLOBLET OF FIRE</a>
+              <table class="nested-table">
+                <tr>
+                  <td>Publication Date:</td>
+                  <td>nov 18, 2005</td>
+                </tr>
+                <tr>
+                  <td>Page Count:</td>
+                  <td>889</td>
+                </tr>
+                <tr>
+                  <td>ISBN:</td>
+                  <td>326581273565</td>
+                </tr>
+              </table>
+            </td>
+            <td>J K Rollings</td>
+            <td>Magic world</td>
+            <td>Available</td>
+          </tr>
+          
+          <tr>
+            <td>003</td>
+            <td>
+              <a href="#">HARRY POTTER Sorcerors Stone</a>
+              <table class="nested-table">
+                <tr>
+                  <td>Publication Date:</td>
+                  <td>june 13,1997</td>
+                </tr>
+                <tr>
+                  <td>Page Count:</td>
+                  <td>507</td>
+                </tr>
+                <tr>
+                  <td>ISBN:</td>
+                  <td>6598151273565</td>
+                </tr>
+              </table>
+            </td>
+            <td>J K Rollings</td>
+            <td>Magic world</td>
+            <td>Available</td>
+          </tr>
+          
+          <tr>
+            <td>004</td>
+            <td>
+              <a href="#">HARRY POTTER Chamber of Secrets</a>
+              <table class="nested-table">
+                <tr>
+                  <td>Publication Date:</td>
+                  <td>oct 25, 1998</td>
+                </tr>
+                <tr>
+                  <td>Page Count:</td>
+                  <td>350</td>
+                </tr>
+                <tr>
+                  <td>ISBN:</td>
+                  <td>81273565</td>
+                </tr>
+              </table>
+            </td>
+            <td>J K Rollings</td>
+            <td>Magic world</td>
+            <td>Available</td>
+          </tr>
+
+          
+        </tbody>
+      </table>
+    </section>
+    <br>
+
+    
+    <section id="register">
+      <h2>Registration Form</h2>
+      <form id="registration-form">
+        <div class="form-group">
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" name="first-name" required>
+        </div><br>
+        <div class="form-group">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" name="last-name" required>
+        </div><br>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div><br>
+        <div class="form-group">
+          <label for="dob">Date of Birth</label>
+          <input type="date" id="dob" name="dob" required>
+        </div><br>
+        <div class="form-group">
+          <label for="age">Age</label>
+          <input type="number" id="age" name="age" min="5" max="100" required>
+        </div><br>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required>
+        </div><br>
+        <div class="form-group">
+          <label for="confirm-password">Confirm Password</label>
+          <input type="password" id="confirm-password" name="confirm-password" required>
+        </div><br>
+        <button type="submit">Register</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
